@@ -8,45 +8,10 @@ public class Solution {
 	    String BigStringOfBrailleNums = "";
 
 		for (int i = 0; i < s.length(); i++) {
-
-			if (s.length() > 50) {
-				System.out.println("This sign exceeds the maximum of 50 characters. Please try again.");
-				break;
-			}
 		    
 		    String BraileLetter = String.valueOf(s.charAt(i));
-
-		    if (BraileLetter.equals("0")) {
-			    System.out.println("Please only use letters or spaces in signs.");
-			    break;
-			} else if (BraileLetter.equals("1")) {
-			    System.out.println("Please only use letters or spaces in signs.");
-			    break;
-			} else if (BraileLetter.equals("2")) {
-			    System.out.println("Please only use letters or spaces in signs.");
-			    break;
-			} else if (BraileLetter.equals("3")) {
-			    System.out.println("Please only use letters or spaces in signs.");
-			    break;
-			} else if (BraileLetter.equals("4")) {
-			    System.out.println("Please only use letters or spaces in signs.");
-			    break;
-			} else if (BraileLetter.equals("5")) {
-			    System.out.println("Please only use letters or spaces in signs.");
-			    break;
-			} else if (BraileLetter.equals("6")) {
-			    System.out.println("Please only use letters or spaces in signs.");
-			    break;
-			} else if (BraileLetter.equals("7")) {
-			    System.out.println("Please only use letters or spaces in signs.");
-			    break;
-			} else if (BraileLetter.equals("8")) {
-			    System.out.println("Please only use letters or spaces in signs.");
-			    break;
-			} else if (BraileLetter.equals("9")) {
-			    System.out.println("Please only use letters or spaces in signs.");
-			    break;
-			} else if (BraileLetter.equals(" ")) {
+		    
+		    if (BraileLetter.equals(" ")) {
 		        BigStringOfBrailleNums += "000000";
 		    } else if (BraileLetter.equals("A")) {
 		        BigStringOfBrailleNums += "000001100000";
@@ -155,7 +120,6 @@ public class Solution {
 		    }
 		}
         
-        System.out.println(BigStringOfBrailleNums);
 		return BigStringOfBrailleNums;
     }
 }
